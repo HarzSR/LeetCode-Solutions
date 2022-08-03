@@ -38,7 +38,7 @@ class MyCalendar(object):
         if self.__root is None:
             self.__root = Node(start, end)
             return True
-        return self.root.insert(Node(start, end))
+        return self.__root.insert(Node(start, end))
 
 
 # Time:  O(n^2)
